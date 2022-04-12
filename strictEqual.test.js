@@ -116,3 +116,29 @@ describe ("Given a strictEquals function", () => {
   })
 })
 
+
+test("both parameters are  not equal", () => {
+      const a = [ 1, 2, 3, 4 ];
+      const b = [1, 2, 3, 5]; 
+      const expectedResult = false;
+      const textResult = strictEquals(a, b);
+  expect(expectedResult).toEqual(expectedResult)
+})
+
+
+test("both parameters are equal", () => {
+  const a = [ 1, 2, 3, 4 ];
+  const b = [1, 2, 3, 4]; 
+  const expectedResult = true;
+  const textResult = strictEquals(a, b);
+expect(expectedResult).toEqual(expectedResult)
+})
+
+test("parameters are both undefined", () => {
+  const a = '';
+  const b = '';
+  const expectedResult = true;
+  const textResult = strictEquals(a, b);
+expect(expectedResult).toBe(expectedResult)
+})
+
