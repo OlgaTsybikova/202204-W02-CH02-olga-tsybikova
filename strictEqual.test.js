@@ -137,8 +137,8 @@ expect(expectedResult).toEqual(expectedResult)
 test("parameters are both undefined", () => {
   const a = '';
   const b = '';
-  const expectedResult = true;
+  const expectedResult = undefined;
   const textResult = strictEquals(a, b);
-expect(expectedResult).toEqual(expectedResult)
+expect(expectedResult).toBeUndefined(expectedResult)
 })
 
